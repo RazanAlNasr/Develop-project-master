@@ -1,7 +1,10 @@
 body {
   background-color: rgb(243, 237, 237);
-  max-width: 100%;
+  /* max-width: 100%; */
   font-family: 'Quicksand', "Times New Roman", Times, serif;
+  animation:fadeInDown; 
+  animation-duration: 3s; 
+  animation-delay: 0s;
 }
 
 /* 1  */
@@ -73,10 +76,8 @@ nav {
       box-sizing: border-box; /* so i can change size from the bottom */
       animation: bounce; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 2s; /* don't forget to set a duration! */
-     
+     animation-iteration-count: 3;
   }
-
-
 
 
   .hp {
@@ -105,28 +106,23 @@ margin-bottom:10% ;
 .Services { /* for all */
     display:flex;
     justify-content:space-evenly;
-    /* align-content: flex-start; */
-    /* align-items: stretch; */
     background-color: #e6e3f0;
     padding: 90px;
     box-sizing: border-box; 
 }
 
 figure{
-   display: block;
+    display: block;
     width:250px;
     height: 250px;
     border-radius: 50%;
     text-align: center;
-    /* margin-right: 10px; */
     background: #FEE552;
-    line-height: 1.7em;
- 
 }
 
 figure img{
   padding: 40px;
- width: 70%;
+  width: 70%;
 }
 
 .Services h3 {
@@ -138,41 +134,37 @@ figure img{
   border: 1px solid rgb(255, 255, 255);
   background-color: white;
   box-shadow: 2px 5px 2px rgba(15, 15, 15, 0.3);
-  animation: backInLeft; 
-  animation-duration: 3s; 
-  animation-delay: 2s;
 }
 
-
-
+.box1:hover {
+  transform: scale(1.1);
+}
 
 .box2 { /* white around yellow */
   border: 1px solid rgb(255, 255, 255);
   background-color: white;
-  box-shadow: 2px 5px 2px rgba(15, 15, 15, 0.3);
-  animation: backInLeft; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
-  animation-delay: 2s;
-  
+  box-shadow: 2px 5px 2px rgba(15, 15, 15, 0.3);  
 }
 
+.box2:hover {
+  transform: scale(1.1);
+}
 
 .box3 { /* white around yellow */
   border: 1px solid rgb(255, 255, 255);
   background-color: white;
   box-shadow: 2px 5px 2px rgba(15, 15, 15, 0.3);
-  animation: backInLeft; 
-  animation-duration: 3s; 
-  animation-delay: 2s;
+}
+
+.box3:hover {
+  transform: scale(1.1);
 }
 
 
 
 /* 4 */
 
-
-
-  
+ 
 .container h3 {
   text-align: center;
   font-size: 50px;
@@ -186,11 +178,8 @@ figure img{
   font-size: 35px;
   width: 100%;
   height: auto;
-  animation: backInLeft; 
-  animation-duration: 3s; 
-  animation-delay: 2s;
-
 }
+
 
 .hp2 li{
   margin-left: 5%;
@@ -211,6 +200,11 @@ figure img{
   order: 2;
 }
 
+.started1 img:hover {
+  animation: bounceIn; 
+  animation-duration: 2s; 
+}
+
 .started2 {
   display: flex;
   justify-content: space-between;
@@ -218,13 +212,15 @@ figure img{
   font-size: 20px;
   width: 100%;
   height: auto;
-  animation: backInLeft; 
-  animation-duration: 3s; 
-  animation-delay: 2s;
 }
 
 .started2 img {
   width: 50%;
+}
+
+.started2 img:hover {
+  animation: bounceIn; 
+  animation-duration: 2s; 
 }
 
 .started3 {
@@ -234,17 +230,17 @@ figure img{
   font-size: 20px;
   width: 100%;
   height: auto;
-  animation:fadeInLeft; 
-  animation-duration: 2s; 
-  animation-delay: 2s;
 }
 
 .started3 img {
   order: 2;
   width: 50%;
 }
-  
 
+.started3 img:hover {
+  animation: bounceIn; 
+  animation-duration: 2s; 
+}
 
   /* 5 */
 
@@ -255,13 +251,8 @@ figure img{
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
-    /* align-content:space-between; */
     width: 100%;
     height: 900px;
-    /* height: auto; */
-    
-  
-    
   }
   
   .contact h3 {
@@ -296,9 +287,11 @@ figure img{
   }
 
   
-form ::placeholder {
-  font-size: 20px;
-}
+  form ::placeholder {
+    font-size: 20px;
+  }
+
+
   textarea {
     font-size: 30px; 
     color: silver;
@@ -308,7 +301,6 @@ form ::placeholder {
     font-family: 'Quicksand', "Times New Roman", Times, serif;
     width:82%;
     height: 100%;
-
   }
   
 
@@ -324,16 +316,12 @@ form ::placeholder {
     height: 80px;
     animation:fadeInLeft; 
    animation-duration: 2s; 
-
-
   }
   
   input[type="text"] {
     border: 1px solid #c6c5c9;
   }
   
-
-
 
  /* 6 */
 
@@ -383,28 +371,22 @@ order: 3;
 
   .info ul {
     list-style: none;
-   
   }
   
 
 figure{
-   display: block;
+    display: block;
     width:250px;
     height: 250px;
     border-radius: 50%;
-    text-align: center;
-    /* margin-right: 10px; */
+    /* text-align: center; */
     background: #FEE552;
-    line-height: 1.7em;
- 
 }
 
 figure img{
   padding: 40px;
- width: 70%;
+  width: 70%;
 }
-
-
 
 
 footer {
@@ -417,6 +399,10 @@ footer {
   animation-duration: 2s; 
 
 }
+
+
+
+/*             MEDIA                 */
 
 
 
@@ -444,7 +430,7 @@ footer {
     #aboutUs img {
       width: 90%;
       padding:50px; 
-      box-sizing: border-box; /* so i can change size from the bottom */
+      box-sizing: border-box; /* overflow */
   }
 
     .hp {
@@ -483,30 +469,27 @@ footer {
    flex-direction: column;
     background-color: #e6e3f0;
     box-sizing: border-box; 
-    
 }
 
-.box1 {
-  margin: 3%;
-}
+  .box1 {
+    margin: 3%;
+  }
 
-.box2 {
-  margin: 3%;
-}
+  .box2 {
+    margin: 3%;
+  }
 
-.box3 {
-  margin: 3%;
-}
+  .box3 {
+    margin: 3%;
+  }
 
 figure{
-   /* display: block; */
     width:200px;
     height: 200px;
     border-radius: 50%;
     text-align: center;
     /* margin-right: 10px; */
     background: #FEE552;
-    line-height: 1.7em;
     box-sizing: border-box; 
 }
 
@@ -523,7 +506,6 @@ figure img{
 
 .started1 {
   flex-direction: column-reverse;
-  
 }
 
 .hp2 li{
@@ -565,17 +547,12 @@ figure img{
   width: 80%;
  margin-top:10% ;
 }
-  
-    
+
 
 .contact {
   flex-direction: column;
-  /* gap: 15px; */
-  /* align-content:space-between; */
   width: 100%;
   height: auto;
-  /* height: 1600px; */
-  
 }
 
 form {
@@ -608,7 +585,6 @@ textarea {
 }
 
 .contact {
-  /* flex-direction: column; */
   align-items: center;
   width: 100%;
   height: 1200px;
@@ -698,6 +674,9 @@ order: 1;
     }
   } 
   
+
+
+
 
 
   @media only screen and (min-width: 600px) { 
