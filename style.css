@@ -577,6 +577,21 @@ form {
   margin-top: -10%;
 }
 
+
+form input {
+  text-align: left;
+  font-size: 30px; 
+  width: 60%;
+  height: auto;
+  border-radius: 5px;
+  font-family: 'Quicksand', "Times New Roman", Times, serif;
+ 
+ }
+
+ .form2 {
+   gap: 1%;
+ }
+
 .contact h3 {
   font-size: 30px;
 }
